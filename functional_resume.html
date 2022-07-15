@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Resume Builder</title>
+    <script src="js/popper.min.js" ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/functional_resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/funresumebuilder.js"></script>
+</head>
+<body>
+    <section class="banner ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5 ">
+              <div class="container">
+                <a class="navbar-brand" href="#">Resume Builder</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item active" href="functional_resume.html">Functional Resume</a>
+                                <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
+                                <a class="dropdown-item" href="Combinational_Resume.html">Combinational Resume</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
+        </section>
+
+        <section class="maindetails">
+            <div class="container">
+                <h1 class="text-center my-5 text-primary">Functional Resume</h1>
+                <img src="images/Detailed_info.svg" alt="" class="d-block img-fluid mx-auto">
+                <form class="w-75 py-5 mx-auto">
+                    <h4 class="text-center">Enter your Personal Details</h4>
+                    <fieldset class="border p-2 ">
+                        <legend class="float-none w-auto h5">Personal Details</legend>
+                        <div class="mb-3">
+                            <label for="imagefile" class="form-label">Upload your Photo</label>
+                            <input class="form-control" type="file"  accept=".png,.jpeg,.jpg" id="imagefile" onchange="readURL(this);">
+                          </div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name:</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="summary1" class="form-label">Summary:</label>
+                            <input type="text" class="form-control" id="summary1">
+                          </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                       
+                        <div class="mb-3">
+                          <label for="phnumber" class="form-label">Phone Number:</label>
+                          <input type="tel" class="form-control" id="phnumber" pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                          <label for="location" class="form-label">Location:</label>
+                          <input type="text" class="form-control" id="location">
+                        </div>
+                        <div class="mb-3">
+                            <label for="linkedin" class="form-label">Linkedin:</label>
+                            <input type="email" class="form-control" id="linkedin">
+                        </div>
+                        <div class="mb-3">
+                          <label for="github" class="form-label">Github:</label>
+                          <input type="text" class="form-control" id="github" >
+                        </div>
+                        </fieldset>
+                       
+                        <img src="images/Educational Details.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+                        <h4 class="my-2 text-center">Enter your Educational Details</h4>
+                        <fieldset class="border p-2 ">
+                            <legend class="float-none w-auto h5">Educational Details:</legend>
+                        
+                        <div class="mb-3">
+                            <label for="education4" class="form-label">Master Degree College Name(Optional):</label>
+                            <input type="text" class="form-control" id="education4">
+                          </div>
+                        <div class="mb-3">
+                            <label for="percentage4" class="form-label">Percentage:</label>
+                            <input type="number" class="form-control" id="percentage4">
+                          </div>
+                        <div class="mb-3">
+                              <label for="year4" class="form-label">Passing Year:</label>
+                              <input type="text" class="form-control" id="year4">
+                            </div>
+                        <div class="mb-3">
+                            <label for="education3" class="form-label">Degree College Name:</label>
+                            <input type="text" class="form-control" id="education3">
+                          </div>
+                        <div class="mb-3">
+                            <label for="percentage3" class="form-label">Percentage:</label>
+                            <input type="number" class="form-control" id="percentage3">
+                          </div>
+                        <div class="mb-3">
+                              <label for="year3" class="form-label">Passing Year:</label>
+                              <input type="text" class="form-control" id="year3">
+                            </div>
+                        <div class="mb-3">
+                                <label for="education2" class="form-label">Polytechnic/HSC College Name:</label>
+                                <input type="text" class="form-control" id="education2">
+                              </div>
+                        <div class="mb-3">
+                                <label for="percentage2" class="form-label">Percentage:</label>
+                                <input type="number" class="form-control" id="percentage2">
+                              </div>
+                        <div class="mb-3">
+                                  <label for="year2" class="form-label">Passing Year:</label>
+                                  <input type="text" class="form-control" id="year2">
+                                </div>
+                        <div class="mb-3">
+                                    <label for="education1" class="form-label">SSC school name:</label>
+                                    <input type="text" class="form-control" id="education1">
+                                </div>
+                        <div class="mb-3">
+                                    <label for="percentage1" class="form-label">Percentage:</label>
+                                    <input type="number" class="form-control" id="percentage1">
+                                </div>
+                        <div class="mb-3">
+                                    <label for="year1" class="form-label">Passing Year:</label>
+                                    <input type="text" class="form-control" id="year1">
+                            </div>
+                            </fieldset>
+                            <img src="images/certificate.svg" class="img-fluid mx-auto d-block py-5 w-25" alt="">
+                            <h4 class="my-5 text-center">Certifications</h4>
+
+                        <fieldset class="border p-2 ">
+                            <legend class="float-none w-auto h5">Certification:</legend>
+
+                            <div class="mb-3">
+                                <label for="certificates1" class="form-label">Certificates:</label>
+                                <input type="text" class="form-control" id="certificates1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="certificates2" class="form-label">2nd Certificate(if any):</label>
+                                <input type="text" class="form-control" id="certificates2">
+                            </div>
+                            <div class="mb-3">
+                                <label for="certificates3" class="form-label">3rd Certificate(if any):</label>
+                                <input type="text" class="form-control" id="certificates3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="certificates4" class="form-label">4th Certificate(if any):</label>
+                                <input type="text" class="form-control" id="certificates4">
+                            </div>
+                            </fieldset>
+                            <h4 class="my-5 text-center">Enter your Skills</h4>
+                            <img src="/images/skills.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+
+                            
+                        <fieldset class="border p-2 ">
+                            <legend class="float-none w-auto h5">Skills:</legend>
+                            <div class="mb-3">
+                                <label for="interest1" class="form-label">Enter your Interest:</label>
+                                <textarea rows="5" class="form-control" id="interest11"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="softskills1" class="form-label">Enter your Soft Skills:</label>
+                              <textarea rows="5" class="form-control" id="softskills11"></textarea>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="technicalskills1" class="form-label">Enter your Technical Skills:</label>
+                            <textarea rows="5" class="form-control" id="technicalskills11"></textarea>
+                        </div>
+
+                            <div class="mb-3">
+                                <label for="languages" class="form-label">Enter your Languages:</label>
+                                <textarea rows="5" class="form-control" id="languages11"></textarea>
+                            </div>
+                        </fieldset>
+                            <div class="d-flex gap-2 justify-content-center">
+                            <button type="button" class="form-control btn btn-success mt-5 w-25" id="submit1" onclick="funcresume()">Submit</button>
+                            <button type="reset" class="form-control btn btn-primary mt-5 w-25">Reset</button>
+                        </div>
+
+                </form>
+
+            </div>
+            
+        </section>
+        
+        <!-- <section class="funresume py-5">
+          <div class="container">
+              <div class="d-flex px-5">
+                  <img src="" id="imagefile1" height="150px" width="150px"></img>
+                  <div class="details mx-3 ">
+                    <h4 id="name1"></h4>
+                    <span class="fa fa-envelope">&nbsp;</span><p id="email1">Enter Your Email:</p>
+                    <span class="fa fa-phone">&nbsp;</span><p id="phnumber2">Enter Your Phone Number:</p>
+                    <span class="fa fa-linkedin">&nbsp;</span><p id="linkedin2">Linkedin Profile:</p>
+                    <span class="fa fa-github">&nbsp;</span><p id="github2">Github Profile:</p>
+                    <span class="fa fa-location-arrow">&nbsp;</span><p id="location2">Location:</p>
+                  </div>
+                </div>
+                  <p class="py-5" id="summ1"></p>
+              <hr>
+              <h3 class="py-1 mb-3 bg-danger text-white ">Educational Background</h3>
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Year</th>
+                      <th scope="col">University Name</th>
+                      <th scope="col">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" id="year11"></th>
+                      <td id="univ1"></td>
+                      <td id="score1"></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row" id="year22"></th>
+                      <td id="univ2"></td>
+                      <td id="score2"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" id="year33"></th>
+                      <td id="univ3"></td>
+                      <td id="score3"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" id="year44"></th>
+                      <td id="univ4"></td>
+                      <td id="score4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                  <hr>
+                <h3 class="py-1 mb-3 bg-danger text-white">Certificates</h3>
+                <p id="cert1"></p>
+                <p id="cert2"></p>
+                <p id="cert3"></p>
+                <p id="cert4" class="pb-2"></p>
+  
+                <hr>
+  
+                <h3 class="py-1 mb-3 bg-danger text-white">Interests</h3>
+                <p id="interest1"></p>
+  
+                <hr>
+  
+                <h3 class="py-1 mb-3 bg-danger text-white">Soft Skills</h3>
+                <p id="softskills1"></p>
+                
+                <hr>
+  
+                <h3 class="py-1 mb-3 bg-danger text-white">Technical Skills</h3>
+                <p id="technicalskills1"></p>
+                
+                <hr>
+                
+                <h3 class="py-1 mb-3 bg-danger text-white">Spoken Languagaes</h3>
+                <p id="lang1"></p>
+                
+                
+                
+                
+              </div>
+                
+              </div>
+            </section> -->
+            
+</body>
+</html>
