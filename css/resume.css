@@ -23,13 +23,7 @@ body{animation: 2s ease-out 0s 1 FadeIn;}
    
 }
 
-.imgs
-{
-  height: 350px;
-  width: 400px;
-  background-color: brown;
-  border: 1px solid black;
-}
+
 .hw
 {
   width: 50%;

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/funresumebuilder.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-print.min.css" media="print">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Functional Resume </title>
@@ -15,15 +17,34 @@
 <body>
   <section class="funresume py-5">
     <div class="container">
-        <div class="d-flex ">
-            <img src="" id="imagefile1" height="150px" width="150px"></img>
-            <div class="details mx-5 px-5">
+        <div class="d-flex">
+          <div>
+            <img src="" id="imagefile1" style="height: 150px; width: 150px;"></img>
+          </div>
+            <div class="mx-5 px-5">
               <h4 id="name1"></h4>
-              <span class="fa fa-envelope">&nbsp;</span><p id="email1">Enter Your Email:</p>
-              <span class="fa fa-phone">&nbsp;</span><p id="phnumber2">Enter Your Phone Number:</p>
-              <span class="fa fa-linkedin">&nbsp;</span><p id="linkedin2">Linkedin Profile:</p>
-              <span class="fa fa-github">&nbsp;</span><p id="github2">Github Profile:</p>
-              <span class="fa fa-location-arrow">&nbsp;</span><p id="location2">Location:</p>
+              <div class="d-flex">
+              <i class="fa fa-envelope fa-1x pt-1">&nbsp;</i>
+              <p id="email1"></p>
+              </div>
+              <div class="d-flex ">
+                <i class="fa fa-phone pt-1">&nbsp;</i>
+                <p id="phnumber2"></p>
+              </div>
+              <div class="d-flex ">
+                 <i class="fa fa-linkedin pt-1">&nbsp;</i>
+                 <p id="linkedin2"></p>
+              </div>
+              <div class="d-flex">
+                <i class="fa fa-github pt-1">&nbsp;</i>
+                <p id="github2"></p>
+              </div>
+              <div class="d-flex ">
+                <i class="fa fa-location-arrow pt-1">&nbsp;</i>
+                <p id="location2"></p>
+              </div>
+              
+             
             </div>
           </div>
             <p class="py-5" id="summ1"></p>
@@ -82,7 +103,6 @@
 
           <h3 class="py-1 mb-3 bg-danger text-white">Technical Skills</h3>
           <p id="technicalskills1"></p>
-          
           <hr>
           
           <h3 class="py-1 mb-3 bg-danger text-white">Spoken Languagaes</h3>

@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/funresumebuilder.js"></script>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <title>Your Resume is ready</title>
 </head>
 <body>
     <div class="container">
     <h1 class="text-primary text-center my-5">Functional Resume</h1>
-    <img src="images/resumeop.svg" alt="" class="my-5 d-block w-50 img-fluid mx-auto">
+    <!-- <img src="images/resumeop.svg" alt="" class="my-5 d-block w-50 img-fluid mx-auto"> -->
+    </div>
+    <div class="my-5 ratio ratio-16x9">
+        <iframe src="funcop.html" id="funcframe" allowfullscreen></iframe>
+      </div>
     <button type="button" class="btn btn-primary my-5" onclick="back()">back</button>
     <button type="button" class="btn btn-primary float-end my-5" onclick="print1()">Download</button>
     
-    <div class="my-5 ratio ratio-16x9">
-        <iframe src="funcop.html"  style="max-width: 100%; height: 100%;" id="funcframe" allowfullscreen></iframe>
-      </div>
     
-    </div>
 
 
 </body>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/resume.css">
     <script src="js/popper.min.js" ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <script src="js/bootstrap.min.js"></script>
     <title>Resume Builder</title>
 </head>
@@ -32,10 +33,10 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume Formats</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="functional_resume.html">Functional Resume</a>
-                        <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
-                        <a class="dropdown-item" href="Combinational_Resume.html">Combinational Resume</a>
+                    <div class="dropdown-menu bg-transparent" aria-labelledby="dropdownId">
+                        <a class="dropdown-item text-light bg-transparent" href="functional_resume.html">Functional Resume</a>
+                        <a class="dropdown-item text-light bg-transparent" href="Chronological_Resume.html">Chronological Resume</a>
+                        <a class="dropdown-item text-light bg-transparent" href="Combinational_Resume.html">Combinational Resume</a>
                     </div>
                 </li>
             </ul>
@@ -56,91 +57,89 @@
 </div>
 </section>
 <section class="bodycontent my-5">
-    <div class="container">
-    <h1 class="text-center text-primary">With this Tool You can design resume in 3-different Format!! </h1>
-    <div class="d-sm-flex  justify-content-between align-items-center text-center text-md-start  py-5 gap-sm-5 ">
-        <div>
-            <h1 class="text-danger">Functional Resumes</h1>
-            <h5>A functional resume is a type of resume format which showcases skills over experience. The purpose of a functional resume is to draw attention to transferable abilities rather than focusing on a chronological overview of your work history. Because of it's properties, it's sometimes called a skills-based resume. </h5>
+    <div class="container-md">
+    <div class="d-md-flex justify-content-center mb-5 pb-5">
+        <div class="col-md-6">
+            <h1 class="text-danger text-center text-md-start mt-4">Functional Resumes</h1><br>
+            <h5 class="text-justify pb-2">A functional resume is a resume format that focuses more on your professional skills rather than each job you held and when you held that job.
+              <br><br>
+              Looking to emphasize your skills rather than your career progression? The functional resume format is the ideal choice for you. And if you're a career changer, job seeker with employment gaps, or someone with a highly developed skill set, the functional resume format gives you the best chance of impressing a hiring manager.
+              <br><br>
+              The biggest difference between a functional resume and the standard chronological resume is that a functional resume groups your experience under skill categories instead of job titles. Under each skill category, bullet points are used to highlight examples of your skills, and those examples can come from both work and life experiences.
+              <br><br>
+              Functional resumes are a useful tool for highlighting your skills and abilities, but it's important to be honest about your work history and to include any relevant experience that you have had. Employers may be skeptical of a functional resume if it appears to be hiding gaps in employment or job hopping.
+            </h5>
         </div>
-            <img src="images/functional_resume.svg" class="img-fluid imgs my-5" alt="Resume Builder">
+        <div class="col-md-6 text-center">
+          <img src="images/functional_resume.svg" class="img-fluid" alt="Resume Builder">
+        </div>
         
     </div>
-    <div class="d-sm-flex align-items-center text-center text-md-start  justify-content-between py-sm-5 gap-sm-5">
-        <img src="images/chronological_resume.svg" class="img-fluid imgs" alt="Resume Builder">
-        <div class="my-5 ">
-            <h1 class="text-danger">Chronological Resume</h1>
-            <h5 class="text-dark ">A chronological resume lists your work experiences and achievements starting from the current or most recent one, and following up with previous jobs below. For this exact reason, the chronological resume is the perfect choice for job-seekers who have plenty of experience and achievements to list on their resume </h5>
-        </div>
-        
-    </div>
-    <div class="d-sm-flex align-items-center text-center text-md-start  justify-content-between py-sm-5 gap-sm-5">
-        <div class="w-md-25 my-5">
-            <h1 class="text-success">Combinational Resume</h1>
-            <h5 class="text-dark">A combination resume format emphasizes both skills and accomplishments, and recent work history.
-              For reference, a combination resume will include elements of the other two commonly used resume formats: <br>
+    <div class="d-md-flex justify-content-center mb-5 pb-5">
+      <div class="col-md-6 order-1">
+      <h1 class="text-warning text-md-start text-center">Chronological Resume</h1> <br>
+      <h5 class="text-justify pb-2">A chronological resume opens with an introduction, and then provides an overview of your professional history in reverse-chronological order (meaning your most recently held position is listed at the top).
+        <br><br>
+        A chronological resume is a type of resume that lists your work history in reverse chronological order, with your most recent job at the top and your earliest job at the bottom. This type of resume is the most traditional and is often preferred by employers because it provides a clear, straightforward overview of your work history and professional experience.        <br><br>
+              In a chronological resume, it's important to highlight your achievements and responsibilities in each of your past jobs, and to include any relevant experience that you have had. This type of resume is a good choice for people who have a strong, steady work history and who want to highlight their professional experience and accomplishments. 
 
-Functional resume format: Lists required, relevant and transferable skills that set you apart from other candidates. <br>
-Chronological resume format: Provides recent and relevant work history in reverse-chronological order, listing the most recent work experiences first in the professional history section.
-               </h5>
+      </h5>
+
+      </div>
+          <div class="col-md-6 order-0 text-center">
+            <img src="images/chronological_resume.svg" class="img-fluid" alt="Resume Builder">
         </div>
-            <img src="images/combinational_resume.svg" class="img-fluid imgs" alt="Resume Builder">
+        
+    </div>
+    <div class="d-md-flex justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-success text-center text-md-start">Combinational Resume</h1> <br>
+            <h5 class="text-justify pb-2">
+              A combination resume, also known as a hybrid resume, is a type of resume that combines elements of both functional and chronological resumes. In a combination resume, you begin with a summary or objective section that outlines your skills and experience, and then you list your work history in reverse chronological order, starting with your most recent job. The work history section is followed by a skills section, in which you group your skills and abilities into categories.
+              <br><br>
+              A combination resume format emphasizes both skills and accomplishments, and recent work history.
+              For reference, a combination resume will include elements of the other two commonly used resume formats: <br>
+              Functional resume format: Lists required, relevant and transferable skills that set you apart from other candidates. <br>
+              Chronological resume format: Provides recent and relevant work history in reverse-chronological order, listing the most recent work experiences first in the professional history section.
+              <br><br>
+              A combination resume is a good choice for people who want to highlight their skills and accomplishments, but who also want to include a traditional work history section. This type of resume is often used by people who are changing careers, who have gaps in their work history, or who have held a number of different jobs and want to highlight their skills and accomplishments rather than their job titles.  
+            </h5>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="images/combinational_resume.svg" class="img-fluid" alt="Resume Builder">
+        </div>
     </div>
 
 </div>
 </section>
-
+<!-- Carasoul -->
 <section class="resumeselector p-5" id="design1">
-    <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide bg-transparent w-50 mx-auto text-center" data-bs-ride="carousel">
-            <div class="carousel-indicators bg-dark">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <a href="functional_resume.html">
-              <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/functional_resume.svg" class="d-block img-fluid opacity-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-dark h3">Functional Resume</h5>
-                  <p class="text-dark h3">Click on the image to access the Functional Resume.</p>
-                </div>
-              </div> </a>
-              <a href="Chronological_Resume.html">
-             <div class="carousel-item">
-                <img src="images/chronological_resume.svg" class="d-block img-fluid opacity-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-dark h3">Chronological Resume</h5>
-                  <p class="text-dark h3">Click on the image to access the Chronological Resume.</p>
-                </div>
-              </div>
-            </a>
-            <a href="Combinational_Resume.html">
-              <div class="carousel-item">
-                <img src="images/combinational_resume.svg" class="d-block img-fluid opacity-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-dark h3">Combinational Resume</h5>
-                  <p class="text-dark h3">Click on the Image to access the Combinational Resume.</p>
-                </div>
-              </div>
-            </a>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <div class="container-md">
+      <h1 class="text-center">Ready to get started? </h1>
+      <div class="d-flex mt-5 justify-content-center gap-5">
+        <div>
+          <h4 class="text-center">Functional Resume</h4>
+          <button class=" btn bg-success btn-primary" type="button" onclick="location.href='functional_resume.html'">Create Functional Resume</button>
+        </div>
+        <div >
+          <h4 class="text-center">Chronological Resume</h4>
+          <button class=" btn bg-success btn-primary" type="button" onclick="location.href='chronological_resume.html'">Create Functional Resume</button>
+        </div>
+        <div>
+          <h4 class="text-center">Combinational Resume</h4>
+          <button class=" btn bg-success btn-primary" type="button" onclick="location.href='combinational_resume.html'">Create Functional Resume</button>
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
   </section>
+
     <section class="faq py-5" id="faq">
       <h1 class="text-center">FAQ</h1>
       <img src="images/Faq.svg" class="d-block img-fluid mx-auto" alt="">
-      <div class="container py-5">
+      <div class="container-md py-5">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -149,13 +148,14 @@ Chronological resume format: Provides recent and relevant work history in revers
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">You should use a functional resume if the standard reverse-chronological format is not a flattering or appropriate representation of your qualifications. This might be true.
-              <br>
-              When you are changing careers and do not have significant experience within your chosen profession or industry <br>
-              1) If you’re a recent graduate without extensive professional experience <br>
-              2) If you have significant gaps in your employment history <br>
-              3) If you’ve gained significant skills and experiences in ways other than professional jobs, such as in school or through mentorship </div>
-          </div>
+            <div class="accordion-body">
+              <p><b>You should use a functional resume if the standard reverse-chronological format is not a flattering or appropriate representation of your qualifications. </b> <br>
+              </p> <ol>
+              <li>If you're a recent graduate without extensive professional experience </li>
+              <li>If you have significant gaps in your employment history </li>
+               <li>If you've gained significant skills and experiences in ways other than professional jobs, such as in school or through mentorship</li>   </ol>
+            </div>
+              </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
@@ -164,11 +164,12 @@ Chronological resume format: Provides recent and relevant work history in revers
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">The chronological resume is most advantageous when:
-              <br>
-              You have several years of professional experience. <br>
-              Your career progression has been steady, and preferably in one industry. <br>
-              You don’t have gaps in employment on a resume.</div>
+            <div class="accordion-body">
+              <p class="fw-bold">The chronological resume is most advantageous when: </p>
+              <ol>
+              <li>You have several years of professional experience. </li>
+              <li>Your career progression has been steady, and preferably in one industry. </li>
+              <li>You don`t have gaps in employment on a resume.</li> </ol> </div> 
           </div>
         </div>
         <div class="accordion-item">
@@ -178,8 +179,14 @@ Chronological resume format: Provides recent and relevant work history in revers
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">The combination resume format is a good choice if you are a junior or mid-level candidate with important, relevant skills that match the job description. For example, this resume format may be beneficial once you have a few years of work experience after college. Using a combination resume format will highlight skills you’ve acquired as an early career professional, and help connect those skills to your professional experience.</div>
-          </div>
+            <div class="accordion-body">
+              <p class="fw-bold">The combination resume format is a good choice if you are a junior or mid-level candidate with important, relevant skills that match the job description.</p>
+              <ol>
+               <li>This resume format may be beneficial once you have a few years of work experience after college.</li>
+               <li> This resume format will highlight skills you`ve acquired as an early career professional, and help connect those skills to your professional experience.</li>
+              </ol>
+               </div>
+              </div>
         </div>
       </div>
       </div>
