@@ -28,3 +28,13 @@ body{animation: 2s ease-out 0s 1 FadeIn;}
 {
   width: 50%;
 }
+
+td,th
+{
+    text-align: center;
+}
+
+.resumecolor
+{
+  background-color: #374457;
+}

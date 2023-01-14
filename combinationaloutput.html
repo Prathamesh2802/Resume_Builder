@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/popper.min.js" ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/resume.css">
+    <script src="js/combinationresumebuilder.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-print.min.css" media="print">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Combinational Resume </title>
+</head>
+<body>
+  <section class="resumecolor">
+    <div class="container py-5">
+        <div class="d-flex justify-content-between flex-row">
+            <div class="text-light">
+                <h1 id="name1">Your Name</h1>
+                <h4 id="position1">Your Job Description</h4>
+                <p id="position_desc1">Summary</p>
+            </div>
+            <div>
+              <img src="" id="imagefile1" alt="Profile" style="border: 1px solid red;" class="text-light">  
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="bg-info">
+    <div class="container">
+        <div class="d-flex flex-row justify-content-between align-items-center py-2">
+            <div class="d-flex gap-1">
+               <i class="fa fa-envelope pt-1"></i>
+               <p id="email1">Email</p> 
+            </div>
+            <div class="d-flex gap-1">
+                <i class="fa fa-phone pt-1"></i>
+                <p id="phnumber2">Phone no</p> 
+            </div>
+            <div class="d-flex gap-1">
+                <i class="fa fa-location-arrow pt-1"></i>
+                <p id="location2">Location</p> 
+            </div>
+            <div class="d-flex gap-1">
+                <i class="fa fa-linkedin pt-1"></i>
+                <p id="linkedin2">Linkedin</p> 
+            </div>
+            <div class="d-flex gap-1">
+                <i class="fa fa-github pt-1"></i>
+                <p id="github2">Github</p> 
+            </div>
+        </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+
+        <div class="d-flex pt-4 justify-content-between">
+            <div >
+                <h3 class="text-danger text-decoration-underline">WORK EXPERIENCE</h3>
+                <h4 id="workexperienceop1"></h4>
+                <p id="companyop1"></p>
+                <p id="fromto"></p>
+                <p id="ach1op"></p>
+                <h4 id="workexperienceop2" class="pt-2"></h4>
+                <p id="companyop2"></p>
+                <p id="fromto1"></p>
+                <p id="ach2op"></p>
+                <h3 class="text-danger text-decoration-underline mt-5">Education</h3>
+                <h4 id="degree1"></h4>
+                <h4 id="collegename1"></h4>
+                <p id="fromto3"></p>
+                <h4 id="degree2"></h4>
+                <h4 id="collegename2"></h4>
+                <p id="fromto4"></p>
+                <h4 id="degree3"></h4>
+                <h4 id="collegename3"></h4>
+                <p id="fromto5"></p>
+
+                <h3 class="text-danger">LANGUAGES</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Language</th>
+                        <th>Stage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" id="lang1"></td>
+                        <td id="stage1"></td>
+                        
+                      </tr>
+                      <tr>
+                        <td scope="row" id="lang2"></td>
+                        <td id="stage2"></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" id="lang3"></td>
+                        <td id="stage3"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div>
+                <h3 class="text-danger text-decoration-underline">Skills</h3>
+                <p id="skill1op"></p>
+                  <div class="progress my-4" style="height: 20px;">
+                    <div class="progress-bar" id="progress1" role="progressbar" style="width: 0%" ></div>
+                  </div>
+                  <p id="skill2op"></p>
+                  <div class="progress my-4" style="height: 20px;">
+                    <div class="progress-bar" id="progress2" role="progressbar" style="width: 0%;"></div>
+                  </div>
+                  <p id="skill3op"></p>
+                  <div class="progress my-4" style="height: 20px;">
+                    <div class="progress-bar" id="progress3" role="progressbar" style="width: 0%"></div>
+                  </div>
+                  <p id="skill4op"></p>
+                  <div class="progress my-4" style="height: 20px;">
+                    <div class="progress-bar" id="progress4" role="progressbar" style="width: 0%" ></div>
+                  </div>
+                  <p id="skill5op"></p>
+                  <div class="progress my-4" style="height: 20px;">
+                    <div class="progress-bar" id="progress5" role="progressbar" style="width: 0%" ></div>
+                  </div>
+                  <p id="skill6op"></p>
+                  <div class="progress" style="height: 20px;">
+                    <div class="progress-bar" id="progress6" role="progressbar" style="width: 0%" ></div>
+                  </div>
+                  <h3 class="mt-4 text-danger text-decoration-underline">Certifications</h3>
+                  <h4 id="certificates1op"></h4>
+                  <h4 id="certificates2op"></h4>
+                  <h4 id="certificates3op"></h4>
+                  <h4 id="certificates4op"></h4>
+
+                  <h3 class="text-danger text-decoration-underline pt-4">HONOURS AND REWARDS</h3>
+                  <p class="pt-2" id="awardop1"></p>
+                  <p id="awarddescop1"></p>
+                  <p class="pt-2" id="awardop2"></p>
+                  <p id="awarddescop2"></p>
+                  <p class="pt-2" id="awardop3"></p>
+                  <p id="awarddescop3"></p>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+</body>
+</html>

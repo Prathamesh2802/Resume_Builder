@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/popper.min.js" ></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/funresumebuilder.js"></script>
+    <link rel="stylesheet" href="css/functional_resume.css">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <script src="js/funresumebuilder.js"></script>
     <title>Your Resume is ready</title>
 </head>
 <body>
-    <div class="container">
-    <h1 class="text-primary text-center my-5">Functional Resume</h1>
-    <!-- <img src="images/resumeop.svg" alt="" class="my-5 d-block w-50 img-fluid mx-auto"> -->
-    </div>
-    <div class="my-5 ratio ratio-16x9">
+    <section class="banner ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5 ">
+              <div class="container">
+                <a class="navbar-brand" href="#">Resume Builder</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item active" href="functional_resume.html">Functional Resume</a>
+                                <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
+                                <a class="dropdown-item" href="Combinational_Resume.html">Combinational Resume</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
+        </section>
+
+    <div class="ratio ratio-16x9">
         <iframe src="funcop.html" id="funcframe" allowfullscreen></iframe>
       </div>
     <button type="button" class="btn btn-primary my-5" onclick="back()">back</button>

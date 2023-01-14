@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronological Resume Builder</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="js/popper.min.js" ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <script src="js/popper.min.js" ></script>
     <link rel="stylesheet" href="css/resume.css">
-    <script src="js/chronoresumebuilder.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/combinationresumebuilder.js"></script>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <title>Your Resume is ready</title>
 </head>
 <body>
-    
-    <section class="banner ">
+    <section class="banner">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5 ">
               <div class="container">
                 <a class="navbar-brand" href="#">Resume Builder</a>
@@ -39,8 +34,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="functional_resume.html">Functional Resume</a>
-                                <a class="dropdown-item active" href="Chronological_Resume.html">Chronological Resume</a>
-                                <a class="dropdown-item" href="Combinational_Resume.html">Combinational Resume</a>
+                                <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
+                                <a class="dropdown-item active" href="Combinational_Resume.html">Combinational Resume</a>
                             </div>
                         </li>
                     </ul>
@@ -49,11 +44,11 @@
         </nav>
         </section>
     <div class="ratio ratio-16x9">
-        <iframe src="chronop.html" id="chronoframe" allowfullscreen></iframe>
+        <iframe src="combinationaloutput.html" id="combinationalframe" allowfullscreen></iframe>
       </div>
-      <button type="button" class="btn btn-primary" onclick="back()">back</button>
-      <button type="button" class="btn btn-primary float-end" onclick="print1()">Download</button>
-      
+    <button type="button" class="btn btn-primary my-5" onclick="back()">back</button>
+    <button type="button" class="btn btn-primary float-end my-5" onclick="print1()">Download</button>
+    
     
 
 

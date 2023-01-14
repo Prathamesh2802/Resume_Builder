@@ -1,240 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Combinational Resume Builder</title>
-        <script src="js/popper.min.js" ></script>
-        <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/functional_resume.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Combinational Resume Builder</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <script src="js/popper.min.js" ></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+      <link rel="stylesheet" href="css/resume.css">
+        <script src="js/combinationresumebuilder.js"></script>
     </head>
     <body>
-        <section class="banner ">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5 ">
-                  <div class="container">
-                    <a class="navbar-brand" href="#">Resume Builder</a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link " href="index.html">Home <span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="index.html#faq">FAQ</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="functional_resume.html">Functional Resume</a>
-                                    <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
-                                    <a class="dropdown-item active" href="Combinational_Resume.html">Combinational Resume</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-              </div>
-            </nav>
-            </section>
+      <section class="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5 ">
+              <div class="container">
+                <a class="navbar-brand" href="#">Resume Builder</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resume</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="functional_resume.html">Functional Resume</a>
+                                <a class="dropdown-item" href="Chronological_Resume.html">Chronological Resume</a>
+                                <a class="dropdown-item active" href="Combinational_Resume.html">Combinational Resume</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
+        </section>
+        
             
-        <section class="maindetails">
-            <div class="container">
-                <h1 class="text-center my-5 text-primary">Combinational Resume</h1>
-                <img src="images/Detailed_info.svg" alt="" class="d-block img-fluid mx-auto">
-
-                <form class="w-75 py-5 mx-auto">
-                    <h4 class="text-center">Enter your Personal Details</h4>
-                    <fieldset class="border p-2 ">
-                        <legend class="float-none w-auto h5">Personal Details</legend>
-                        <div class="mb-3">
-                            <label for="imagefile" class="form-label">Upload your Photo</label>
-                            <input class="form-control" type="file" id="imagefile" required>
-                          </div>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Name:</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="position" class="form-label">Position:</label>
-                          <input type="text" class="form-control" id="position">
-                        </div>
-                        <div class="mb-3">
-                            <label for="position_desc" class="form-label">Position Description:</label>
-                            <input type="text" class="form-control" id="position_desc">
-                          </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                       
-                        <div class="mb-3">
-                          <label for="phnumber" class="form-label">Phone Number:</label>
-                          <input type="tel" class="form-control" id="phnumber" name="phnumber" pattern="[0-9]{10}">
-                        </div>
-                        <div class="mb-3">
-                          <label for="location" class="form-label">Location:</label>
-                          <input type="text" class="form-control" id="location">
-                        </div>
-                        <div class="mb-3">
-                            <label for="social_link" class="form-label">Social Link(If any):</label>
-                            <input type="email" class="form-control" id="social_link">
-                          </div>
-                        <div class="mb-3">
-                            <label for="linkedin" class="form-label">Linkedin:</label>
-                            <input type="email" class="form-control" id="linkedin">
-                        </div>
-                        <div class="mb-3">
-                          <label for="github" class="form-label">Github:</label>
-                          <input type="text" class="form-control" id="github" >
-                        </div>
-                        </fieldset>
-                        <h4 class="my-5 text-center">Enter your Previous Work experiences</h4>
-                        <fieldset class="border p-2 ">
-                            <legend class="float-none w-auto h5">Previous Workexperience</legend>
-                        <div class="mb-3">
-                          <label for="workexperience1" class="form-label">Workexperience:</label>
-                          <input type="text" class="form-control" id="workexperience1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="companyname1" class="form-label">Company Name:</label>
-                            <input type="text" class="form-control" id="companyname1">
-                          </div>
-                        <div class="mb-3">
-                            <label for="from1" class="form-label">Started from:</label>
-                            <input type="text" class="form-control" id="from1">
+            <section class="maindetails">
+              <div class="container">
+                  <h1 class="text-center my-5 text-primary">Combinational Resume</h1>
+                  <img src="images/Detailed_info.svg" alt="" class="d-block img-fluid mx-auto">
+  
+                  <form class="w-75 py-5 mx-auto">
+                      <h4 class="text-center">Enter your Personal Details</h4>
+                      <fieldset class="border p-2 ">
+                          <legend class="float-none w-auto h5">Personal Details</legend>
+                          <div class="mb-3">
+                              <label for="imagefile" class="form-label">Upload your Photo</label>
+                              <input class="form-control" type="file"  accept=".png,.jpeg" id="imagefile" onchange="readURL(this);">
+                            </div>
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
                           </div>
                           <div class="mb-3">
-                            <label for="to1" class="form-label">To:</label>
-                            <input type="text" class="form-control" id="to1">
+                            <label for="position" class="form-label">Position:</label>
+                            <input type="text" class="form-control" id="position">
                           </div>
-                        <div class="mb-3">
-                            <label for="achievements1" class="form-label">Achievements:</label>
-                            <input type="text" class="form-control" id="achievements1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="workexperience2" class="form-label">2nd Work experience(If any):</label>
-                            <input type="text" class="form-control" id="workexperience2">
-                          </div>
-                        <div class="mb-3">
-                            <label for="companyname2" class="form-label">Company Name:</label>
-                            <input type="text" class="form-control" id="companyname2">
-                          </div>
-                        <div class="mb-3">
-                              <label for="from2" class="form-label">Started from:</label>
-                              <input type="text" class="form-control" id="from2">
+                          <div class="mb-3">
+                              <label for="position_desc" class="form-label">Position Description:</label>
+                              <input type="text" class="form-control" id="position_desc">
                             </div>
-                        <div class="mb-3">
-                              <label for="to2" class="form-label">To:</label>
-                              <input type="text" class="form-control" id="to2">
+                          <div class="mb-3">
+                              <label for="email" class="form-label">Email:</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                         
+                          <div class="mb-3">
+                            <label for="phnumber" class="form-label">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phnumber" name="phnumber" pattern="[0-9]{10}">
+                          </div>
+                          <div class="mb-3">
+                            <label for="location" class="form-label">Location:</label>
+                            <input type="text" class="form-control" id="location">
+                          </div>
+                         
+                          <div class="mb-3">
+                              <label for="linkedin" class="form-label">Linkedin:</label>
+                              <input type="email" class="form-control" id="linkedin">
+                          </div>
+                          <div class="mb-3">
+                            <label for="github" class="form-label">Github:</label>
+                            <input type="text" class="form-control" id="github" >
+                          </div>
+                          </fieldset>
+                          <img src="images/workexp.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+                          <h4 class="my-5 text-center">Enter your Previous Work experiences</h4>
+                          <fieldset class="border p-2 ">
+                              <legend class="float-none w-auto h5">Previous Workexperience</legend>
+                          <div class="mb-3">
+                            <label for="workexperience1" class="form-label">Workexperience:</label>
+                            <input type="text" class="form-control" id="workexperience1">
+                          </div>
+                          <div class="mb-3">
+                              <label for="companyname1" class="form-label">Company Name:</label>
+                              <input type="text" class="form-control" id="companyname1">
                             </div>
-                            
-                        <div class="mb-3">
-                              <label for="achievements2" class="form-label">Achievements:</label>
-                              <input type="email" class="form-control" id="achievements2">
-                          </div>
-                        </fieldset>
-
-                        <h4 class="my-5 text-center">Enter your Educational Details</h4>
-                        <fieldset class="border p-2 ">
-                            <legend class="float-none w-auto h5">Educational Details:</legend>
-                        
-                        <div class="mb-3">
-                            <label for="education1" class="form-label">Master Degree College Name(Optional):</label>
-                            <input type="text" class="form-control" id="education1">
-                          </div>
-                        <div class="mb-3">
-                            <label for="percentage1" class="form-label">Percentage:</label>
-                            <input type="number" class="form-control" id="percentage1">
-                          </div>
-                        <div class="mb-3">
-                              <label for="year1" class="form-label">Passing Year:</label>
-                              <input type="text" class="form-control" id="year1">
+                          <div class="mb-3">
+                              <label for="from1" class="form-label">Started from:</label>
+                              <input type="text" class="form-control" id="from1">
                             </div>
-                        <div class="mb-3">
-                            <label for="education2" class="form-label">Degree College Name:</label>
-                            <input type="text" class="form-control" id="education2">
-                          </div>
-                        <div class="mb-3">
-                            <label for="percentage2" class="form-label">Percentage:</label>
-                            <input type="number" class="form-control" id="percentage2">
-                          </div>
-                        <div class="mb-3">
-                              <label for="year2" class="form-label">Passing Year:</label>
-                              <input type="text" class="form-control" id="year2">
+                            <div class="mb-3">
+                              <label for="to1" class="form-label">To:</label>
+                              <input type="text" class="form-control" id="to1">
                             </div>
-                        <div class="mb-3">
+                          <div class="mb-3">
+                              <label for="achievements1" class="form-label">Achievements:</label>
+                              <textarea class="form-control" id="achievements1"></textarea>
+                          </div>
+                          <div class="mb-3">
+                              <label for="workexperience2" class="form-label">2nd Work experience(If any):</label>
+                              <input type="text" class="form-control" id="workexperience2">
+                            </div>
+                          <div class="mb-3">
+                              <label for="companyname2" class="form-label">Company Name:</label>
+                              <input type="text" class="form-control" id="companyname2">
+                            </div>
+                          <div class="mb-3">
+                                <label for="from2" class="form-label">Started from:</label>
+                                <input type="text" class="form-control" id="from2">
+                              </div>
+                          <div class="mb-3">
+                                <label for="to2" class="form-label">To:</label>
+                                <input type="text" class="form-control" id="to2">
+                              </div>
+                              
+                          <div class="mb-3">
+                                <label for="achievements2" class="form-label">Achievements:</label>
+                                <textarea class="form-control" id="achievements2"></textarea>
+                            </div>
+                          </fieldset>
+                          <img src="images/Educational Details.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+                          <h4 class="my-5 text-center">Enter your Educational Details</h4>
+                          <fieldset class="border p-2 ">
+                              <legend class="float-none w-auto h5">Educational Details:</legend>
+                          
+                              <div class="mb-3">
+                              <label for="field1" class="form-label">Master Completed in: (Optional):</label>
+                              <input type="text" class="form-control" id="field1">
+                              </div>
+  
+                              <div class="mb-3">
+                                <label for="education1" class="form-label">Master Degree College Name(Optional):</label>
+                                <input type="text" class="form-control" id="education1">
+                              </div>
+                          
+                              <div class="mb-3">
+                                <label for="year1" class="form-label">Passing Year:</label>
+                                <input type="text" class="form-control" id="year1">
+                              </div>
+  
+                              <div class="mb-3">
+                                <label for="field2" class="form-label">Degree completed in:</label>
+                                <input type="text" class="form-control" id="field2">
+                                </div>
+  
+                              <div class="mb-3">
+                              <label for="education2" class="form-label">Degree College Name:</label>
+                              <input type="text" class="form-control" id="education2">
+                              </div>
+                         
+                              <div class="mb-3">
+                                <label for="year2" class="form-label">Passing Year:</label>
+                                <input type="text" class="form-control" id="year2">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="field3" class="form-label">Polytechnic/HSC completed in:</label>
+                                  <input type="text" class="form-control" id="field3">
+                              </div>
+  
+                              <div class="mb-3">
                                 <label for="education3" class="form-label">Polytechnic/HSC College Name:</label>
                                 <input type="text" class="form-control" id="education3">
+                            </div>
+                         
+                              <div class="mb-3">
+                                    <label for="year3" class="form-label">Passing Year:</label>
+                                    <input type="text" class="form-control" id="year3">
                               </div>
-                        <div class="mb-3">
-                                <label for="percentage3" class="form-label">Percentage:</label>
-                                <input type="number" class="form-control" id="percentage3">
+                            </fieldset>
+                            <img src="images/certificate.svg" class="img-fluid mx-auto d-block py-5 w-25" alt="">
+                              <h4 class="my-5 text-center">Certifications</h4>
+                          <fieldset class="border p-2 ">
+                              <legend class="float-none w-auto h5">Certification:</legend>
+  
+                              <div class="mb-3">
+                                  <label for="certificates1" class="form-label">Certificates:</label>
+                                  <input type="text" class="form-control" id="certificates1">
                               </div>
-                        <div class="mb-3">
-                                  <label for="year3" class="form-label">Passing Year:</label>
-                                  <input type="text" class="form-control" id="year3">
-                                </div>
-                        <div class="mb-3">
-                                    <label for="education4" class="form-label">SSC school name:</label>
-                                    <input type="text" class="form-control" id="education4">
-                                </div>
-                        <div class="mb-3">
-                                    <label for="percentage4" class="form-label">Percentage:</label>
-                                    <input type="number" class="form-control" id="percentage4">
-                                </div>
-                        <div class="mb-3">
-                                    <label for="year4" class="form-label">Passing Year:</label>
-                                    <input type="text" class="form-control" id="year4">
-                            </div>
-                            </fieldset>
-                            <h4 class="my-5 text-center">Certifications</h4>
-                        <fieldset class="border p-2 ">
-                            <legend class="float-none w-auto h5">Certification:</legend>
+                              <div class="mb-3">
+                                  <label for="certificates2" class="form-label">2nd Certificate(if any):</label>
+                                  <input type="text" class="form-control" id="certificates2">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="certificates3" class="form-label">3rd Certificate(if any):</label>
+                                  <input type="text" class="form-control" id="certificates3">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="certificates4" class="form-label">4th Certificate(if any):</label>
+                                  <input type="text" class="form-control" id="certificates4">
+                              </div>
+                              </fieldset>
 
-                            <div class="mb-3">
-                                <label for="certificates1" class="form-label">Certificates:</label>
-                                <input type="text" class="form-control" id="certificates1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="certificates2" class="form-label">2nd Certificate(if any):</label>
-                                <input type="text" class="form-control" id="certificates2">
-                            </div>
-                            <div class="mb-3">
-                                <label for="certificates3" class="form-label">3rd Certificate(if any):</label>
-                                <input type="text" class="form-control" id="certificates3">
-                            </div>
-                            <div class="mb-3">
-                                <label for="certificates4" class="form-label">4th Certificate(if any):</label>
-                                <input type="text" class="form-control" id="certificates4">
-                            </div>
-                            </fieldset>
-                            <h4 class="my-5 text-center">Enter your Skills</h4>
-                        <fieldset class="border p-2 ">
-                            <legend class="float-none w-auto h5">Skills:</legend>
-                            <div class="mb-3">
-                                <label for="skills" class="form-label">Enter your Skills:</label>
-                                <textarea rows="5" class="form-control" id="skills"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="languages" class="form-label">Enter your Languages:</label>
-                                <textarea rows="5" class="form-control" id="languages"></textarea>
-                            </div>
-                        </fieldset>
-                            <div class="d-flex gap-2 justify-content-center">
-                            <button type="submit" class="form-control btn btn-success mt-5 w-25" name="Submit" id="submit1">Submit</button>
-                            <button type="reset" class="form-control btn btn-primary mt-5 w-25">Reset</button>
-                        </div>
+                              <h4 class="my-5 text-center">Enter the Awards</h4>
+                              <fieldset class="border p-2 ">
+                                  <legend class="float-none w-auto h5">Awards:</legend>
+                                  <div class="mb-3">
+                                    <label for="award1" class="form-label">Enter your 1st Award:</label>
+                                    <input type="text" class="form-control" id="award1">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="awarddesc1" class="form-label">Enter your 1st Award Description:</label>
+                                    <input type="text" class="form-control" id="awarddesc1">
+                                  </div>
+      
+                                  <div class="mb-3">
+                                      <label for="award2" class="form-label">Enter your 2nd Award:</label>
+                                      <input type="text" class="form-control" id="award2">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="awarddesc2" class="form-label">Enter your 2nd Award Description:</label>
+                                    <input type="text" class="form-control" id="awarddesc2">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="award3" class="form-label">Enter your 3rd Award:</label>
+                                    <input type="text" class="form-control" id="award3">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="awarddesc3" class="form-label">Enter your 3rd Award Description:</label>
+                                    <input type="text" class="form-control" id="awarddesc3">
+                                  </div>
+                              </fieldset>
 
-                </form>
-            </div>
-        </section>
+                              <img src="/images/skills.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+                              <h4 class="my-5 text-center">Enter your Skills</h4>
+                          <fieldset class="border p-2 ">
+                              <legend class="float-none w-auto h5">Skills:</legend>
+                              <div class="mb-3">
+                                  <label for="skills1" class="form-label">Enter your 1st Skill:</label>
+                                  <input type="text" class="form-control" id="skill1">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="skillsprog1" class="form-label">Enter your 1st Skill progress:</label>
+                                  <input type="number" class="form-control" id="skillprog1">
+                              </div>
+  
+                              <div class="mb-3">
+                                <label for="skills2" class="form-label">Enter your 2nd Skill:</label>
+                                <input type="text" class="form-control" id="skill2">
+                              </div>
+                              <div class="mb-3">
+                                <label for="skillsprog2" class="form-label">Enter your 2nd Skill progress:</label>
+                                <input type="number" class="form-control" id="skillprog2">
+                            </div>
+  
+                              <div class="mb-3">
+                                <label for="skills3" class="form-label">Enter your 3rd Skill:</label>
+                                <input type="text" class="form-control" id="skill3">
+                              </div>
+                              <div class="mb-3">
+                                <label for="skillsprog3" class="form-label">Enter your 3rd Skill stage:</label>
+                                <input type="number" class="form-control" id="skillprog3">
+                            </div>
+  
+                              <div class="mb-3">
+                                <label for="skills4" class="form-label">Enter your 4th Skill:</label>
+                                <input type="text" class="form-control" id="skill4">
+                              </div>
+                              <div class="mb-3">
+                                <label for="skillsprog4" class="form-label">Enter your 4th Skill stage:</label>
+                                <input type="number" class="form-control" id="skillprog4">
+                            </div>
+  
+                              <div class="mb-3">
+                                <label for="skills5" class="form-label">Enter your 5th Skill:</label>
+                                <input type="text" class="form-control" id="skill5">
+                              </div>
+                              <div class="mb-3">
+                                <label for="skillsprog5" class="form-label">Enter your 5th Skill stage:</label>
+                                <input type="number" class="form-control" id="skillprog5">
+                            </div>
+  
+                              <div class="mb-3">
+                              <label for="skills6" class="form-label">Enter your 6th Skill:</label>
+                              <input type="text" class="form-control" id="skill6">
+                              </div>
+                              <div class="mb-3">
+                                <label for="skillsprog6" class="form-label">Enter your 6th Skill stage:</label>
+                                <input type="number" class="form-control" id="skillprog6">
+                            </div>
+                          </fieldset>
+                          <img src="/images/Language.svg" class="img-fluid mx-auto d-block py-5 w-50" alt="">
+                          <h4 class="my-5 text-center">Enter your Languages</h4>
+                          <fieldset class="border p-2 ">
+                              <legend class="float-none w-auto h5">Languages:</legend>
+                              <div class="mb-3">
+                                <label for="language1" class="form-label">Enter your 1st language:</label>
+                                <input type="text" class="form-control" id="language1">
+                              </div>
+                              <div class="mb-3">
+                                <label for="stage1ip" class="form-label">Enter your 1st language Stage:</label>
+                                <input type="text" class="form-control" id="stage1ip">
+                              </div>
+  
+                              <div class="mb-3">
+                                  <label for="language2" class="form-label">Enter your 2nd language:</label>
+                                  <input type="text" class="form-control" id="language2">
+                              </div>
+                              <div class="mb-3">
+                                <label for="stage1ip" class="form-label">Enter your 2nd language Stage:</label>
+                                <input type="text" class="form-control" id="stage2ip">
+                              </div>
+                              <div class="mb-3">
+                                <label for="language3" class="form-label">Enter your 3rd language:</label>
+                                <input type="text" class="form-control" id="language3">
+                              </div>
+                              <div class="mb-3">
+                                <label for="stage1ip" class="form-label">Enter your 3rd language Stage:</label>
+                                <input type="text" class="form-control" id="stage3ip">
+                              </div>
+                          </fieldset>
+                              <div class="d-flex gap-2 justify-content-center">
+                              <button type="button" class="form-control btn btn-success mt-5 w-25" name="Submit" id="submit1" onclick="combinationresume()">Submit</button>
+                              <button type="reset" class="form-control btn btn-primary mt-5 w-25">Reset</button>
+                          </div>
+  
+                  </form>
+              </div>
+          </section>
     
 </body>
 </html>
